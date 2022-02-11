@@ -170,7 +170,9 @@
             // 
             // dgvPersona
             // 
+            this.dgvPersona.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvPersona.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPersona.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvPersona.Location = new System.Drawing.Point(286, 12);
             this.dgvPersona.Name = "dgvPersona";
             this.dgvPersona.Size = new System.Drawing.Size(596, 345);
@@ -221,7 +223,8 @@
             this.cbCarrera.FormattingEnabled = true;
             this.cbCarrera.Items.AddRange(new object[] {
             "Ingenieria",
-            "Medicina"});
+            "Medicina",
+            "Arquitectura"});
             this.cbCarrera.Location = new System.Drawing.Point(180, 212);
             this.cbCarrera.Name = "cbCarrera";
             this.cbCarrera.Size = new System.Drawing.Size(100, 24);
@@ -233,8 +236,9 @@
             this.cbMateriasInscritas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMateriasInscritas.FormattingEnabled = true;
             this.cbMateriasInscritas.Items.AddRange(new object[] {
-            "Matematicas",
-            "Ingles"});
+            "Calculo",
+            "Ingles",
+            "Programacion"});
             this.cbMateriasInscritas.Location = new System.Drawing.Point(180, 242);
             this.cbMateriasInscritas.Name = "cbMateriasInscritas";
             this.cbMateriasInscritas.Size = new System.Drawing.Size(100, 24);

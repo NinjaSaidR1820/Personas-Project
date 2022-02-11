@@ -1,4 +1,5 @@
 ﻿#region Usos
+using Forms.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,8 @@ namespace Forms
          string materiasInscritas;
          int nota;
          string Cum;
-        
+       
+
         public Universitario()
         {
             Universidades = string.Empty;
@@ -24,6 +26,8 @@ namespace Forms
             MateriasInscritas = string.Empty;
             Nota = 0;
             CUM = string.Empty;
+
+           
 
         }
 
@@ -34,6 +38,9 @@ namespace Forms
         public string MateriasInscritas { get => materiasInscritas; set => materiasInscritas = value; }
         public int Nota { get => nota; set => nota = value; }
         public string CUM { get => Cum; set => Cum = value; }
+
+        public Carrera Car { get; set; }
+        public Materia mat { get; set; }
 
         
       

@@ -1,4 +1,5 @@
 ﻿#region Usos
+using Forms.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,5 +26,7 @@ namespace Forms
 
         public string Carnet { get => carnet; set => carnet = value; }
         public string NivelAcademico { get => nivelAcademico; set => nivelAcademico = value; }
+
+        public NivelAcademico nivelacademic { get; set; }
     }
 }

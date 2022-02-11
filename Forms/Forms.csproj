@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Estudiante.cs" />
+    <Compile Include="Enums\Carrera.cs" />
+    <Compile Include="Enums\Materia.cs" />
+    <Compile Include="Enums\NivelAcademico.cs" />
     <Compile Include="frmEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
