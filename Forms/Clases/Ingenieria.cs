@@ -24,9 +24,9 @@ namespace Forms
 
 
        
-        public Ingenieria(string nombreapellido, int edad, string carnet,string nivelacademico,string universidad, string carrera, string materiainscrita, int nota, string cum,string nombreproyecto, int horatotal, int horacompletada){
+        public Ingenieria(string nombreapellido, int edad,string segs ,string carnet,string nivelacademico,string universidad, string carrera, string materiainscrita, int nota, string cum,string nombreproyecto, int horatotal, int horacompletada){
 
-            this.NombreYapellido = nombreapellido;
+            this.Nombre_Y_apellido = nombreapellido;
             this.Edad = edad;
             this.Carnet = carnet;
             this.NivelAcademico = nivelacademico;
@@ -38,7 +38,7 @@ namespace Forms
             this.NombreProyecto = nombreproyecto;
             this.HoraTotal = horatotal;
             this.HoraCompletada = horacompletada;
-
+            this.Segs = segs;
         }
        
 

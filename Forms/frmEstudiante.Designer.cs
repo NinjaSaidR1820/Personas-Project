@@ -52,9 +52,11 @@
             this.txtHoraTotales = new System.Windows.Forms.TextBox();
             this.txtHoraCompletadas = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.btnMostrar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.lblApellido = new System.Windows.Forms.Label();
             this.txtEdad = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersona)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +64,7 @@
             // 
             this.lblCarnet.AutoSize = true;
             this.lblCarnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCarnet.Location = new System.Drawing.Point(68, 99);
+            this.lblCarnet.Location = new System.Drawing.Point(68, 113);
             this.lblCarnet.Name = "lblCarnet";
             this.lblCarnet.Size = new System.Drawing.Size(100, 16);
             this.lblCarnet.TabIndex = 0;
@@ -72,7 +74,7 @@
             // 
             this.lblNivel.AutoSize = true;
             this.lblNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNivel.Location = new System.Drawing.Point(34, 127);
+            this.lblNivel.Location = new System.Drawing.Point(34, 141);
             this.lblNivel.Name = "lblNivel";
             this.lblNivel.Size = new System.Drawing.Size(134, 16);
             this.lblNivel.TabIndex = 1;
@@ -181,7 +183,7 @@
             // txtCarnet
             // 
             this.txtCarnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCarnet.Location = new System.Drawing.Point(180, 96);
+            this.txtCarnet.Location = new System.Drawing.Point(180, 110);
             this.txtCarnet.Name = "txtCarnet";
             this.txtCarnet.Size = new System.Drawing.Size(100, 22);
             this.txtCarnet.TabIndex = 13;
@@ -211,7 +213,7 @@
             "Basico",
             "Intermedio",
             "Avanzado"});
-            this.cbNivelAcademico.Location = new System.Drawing.Point(180, 124);
+            this.cbNivelAcademico.Location = new System.Drawing.Point(180, 138);
             this.cbNivelAcademico.Name = "cbNivelAcademico";
             this.cbNivelAcademico.Size = new System.Drawing.Size(100, 24);
             this.cbNivelAcademico.TabIndex = 17;
@@ -296,16 +298,17 @@
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // btnMostrar
+            // btnSalir
             // 
-            this.btnMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrar.ForeColor = System.Drawing.Color.Blue;
-            this.btnMostrar.Location = new System.Drawing.Point(180, 482);
-            this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(100, 30);
-            this.btnMostrar.TabIndex = 26;
-            this.btnMostrar.Text = "Mostrar";
-            this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.Blue;
+            this.btnSalir.Location = new System.Drawing.Point(180, 482);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(100, 30);
+            this.btnSalir.TabIndex = 26;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // lblApellido
             // 
@@ -325,12 +328,37 @@
             this.txtEdad.Size = new System.Drawing.Size(100, 22);
             this.txtEdad.TabIndex = 15;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(119, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 16);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Segs:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.comboBox1.Location = new System.Drawing.Point(180, 68);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 24);
+            this.comboBox1.TabIndex = 28;
+            // 
             // frmEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(920, 525);
-            this.Controls.Add(this.btnMostrar);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtHoraCompletadas);
             this.Controls.Add(this.txtHoraTotales);
@@ -359,6 +387,7 @@
             this.Controls.Add(this.lblCarnet);
             this.Name = "frmEstudiante";
             this.Text = "Estudiantes";
+            this.Load += new System.EventHandler(this.frmEstudiante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersona)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -391,9 +420,11 @@
         private System.Windows.Forms.TextBox txtHoraTotales;
         private System.Windows.Forms.TextBox txtHoraCompletadas;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

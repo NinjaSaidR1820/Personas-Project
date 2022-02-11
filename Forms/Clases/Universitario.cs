@@ -39,8 +39,7 @@ namespace Forms
         public int Nota { get => nota; set => nota = value; }
         public string CUM { get => Cum; set => Cum = value; }
 
-        public Carrera Car { get; set; }
-        public Materia mat { get; set; }
+       
 
         
       

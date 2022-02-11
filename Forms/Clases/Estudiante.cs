@@ -27,6 +27,6 @@ namespace Forms
         public string Carnet { get => carnet; set => carnet = value; }
         public string NivelAcademico { get => nivelAcademico; set => nivelAcademico = value; }
 
-        public NivelAcademico nivelacademic { get; set; }
+        
     }
 }

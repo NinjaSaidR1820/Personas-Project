@@ -28,7 +28,7 @@ namespace Forms
         public void guardar1()
         {
 
-            ing = new Ingenieria(txtNombreyApellido.Text, int.Parse(txtEdad.Text), txtCarnet.Text,cbNivelAcademico.Text,
+            ing = new Ingenieria(txtNombreyApellido.Text, int.Parse(txtEdad.Text),comboBox1.Text ,txtCarnet.Text,cbNivelAcademico.Text,
                 txtUniversidad.Text,cbCarrera.Text,cbMateriasInscritas.Text,int.Parse(txtNotas.Text),txtCUM.Text,
                 txtNombreProyecto.Text,int.Parse(txtHoraTotales.Text),int.Parse(txtHoraCompletadas.Text));
 
@@ -47,6 +47,16 @@ namespace Forms
             guardar1();
 
 
+        }
+
+        private void frmEstudiante_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

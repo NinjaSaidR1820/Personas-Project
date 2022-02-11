@@ -15,17 +15,20 @@ namespace Forms
 
          string nombreYapellido;
          int edad;
+        string segs;
 
 
         
         public Persona()
         {
-            NombreYapellido = string.Empty;
+            Nombre_Y_apellido = string.Empty;
             Edad = 0;
+            Segs = string.Empty;
             
         }
 
-        public string NombreYapellido { get => nombreYapellido; set => nombreYapellido = value; }
+        public string Nombre_Y_apellido { get => nombreYapellido; set => nombreYapellido = value; }
         public int Edad { get => edad; set => edad = value; }
+        public string Segs { get => segs; set => segs = value; }
     }
 }
